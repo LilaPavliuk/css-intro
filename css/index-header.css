@@ -11,6 +11,19 @@
 
 }
 
+.header-nav__menu{
+    display: flex;
+    flex-direction: column;
+}
+@media(min-width:600px)
+{
+    .header-nav__menu{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        flex:1;
+    }
+}
 .header-nav__logo {
     font-size: 3.5rem;
     text-transform: uppercase;
@@ -36,5 +49,9 @@
     background-size: cover;
     background-position: 50% 50%;
     min-height: 400px;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
