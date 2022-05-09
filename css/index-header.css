@@ -1,29 +1,40 @@
-.header-banner{
-    background-image: url(../img/baby-yoda.svg);
-    background-size: cover;
-    background-position: center;
-    min-height: 400px;
-    background-attachment: fixed;
+.header-nav {
+    background-color: var(--background-color);
+    padding: 5px;
 }
-.header-banner__h1{
-    font-size:56px;
+
+@media (min-width: 600px) {
+
+    .header-nav > .container {
+        display: flex;
+    }
+
 }
-.header-nav__logo{
-    font-size: 3,5rem;
+
+.header-nav__logo {
+    font-size: 3.5rem;
     text-transform: uppercase;
     text-align: center;
 }
-.header-nav{
-    padding:10px
+
+.header-banner__h1 {
+    font-size: 56px;
 }
-.header-nav__menu-item{
+
+.header-nav__menu-item {
     text-decoration: none;
-    color:var(--main-text-color);
     display: block;
+    color: var(--main-text-color);
 }
-.header-nav__menu-item a:hover{
+
+.header-nav__menu-item:hover {
     text-decoration: underline;
 }
-.header-nav__menu{
-    background-color: var(--background-color);
+
+.header-banner {
+    background-image: url(../img/baby-yoda.svg);
+    background-size: cover;
+    background-position: 50% 50%;
+    min-height: 400px;
 }
+
